@@ -1,0 +1,12 @@
+{
+  "prettier.configPath": ".prettierrc.json",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "prettier.htmlWhitespaceSensitivity": "ignore"
+}
