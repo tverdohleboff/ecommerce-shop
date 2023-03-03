@@ -1,8 +1,11 @@
 import './App.css';
-import { Counter } from './features/counter/Counter';
-import LoginForm from './features/login/LoginForm';
+import './button.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectCurrentUser, signOut } from './features/login/loginSlice';
+import { clearTasksList } from './features/tasks/tasksSlice';
+import LoginForm from './features/login/LoginForm';
+import TasksList from './features/tasks/TasksList';
+import TasksCreator from './features/tasks/TasksCreator';
 
 function App() {
   const currentUser = useSelector(selectCurrentUser);
@@ -10,22 +13,31 @@ function App() {
 
   const handleSingOut = () => {
     dispatch(signOut());
+    dispatch(clearTasksList());
   }
 
   return (
     <div className="App">
-      <div>
-        <span>
-          Current user: {currentUser}
+      {currentUser !== 'Anon' ?
+      <div className='userNotAnon'>
+        <span className='userName'>
+          Ваше имя: {currentUser}
         </span>
-        {currentUser !== 'Anon' ?
-         <button 
+         <button className="button buttonSignOut"
           type='button'
           onClick={handleSingOut}
-          >Sign Out</button> : null}
+          >Go out</button> 
       </div>
-      <Counter />
+      : null}
+      {currentUser === 'Anon' ?
       <LoginForm />
+      : null}
+      {currentUser !== 'Anon' ?
+       <div className='tasks'>
+        <TasksList />
+        <TasksCreator /> 
+       </div>
+       : null}
     </div>
   );
 }

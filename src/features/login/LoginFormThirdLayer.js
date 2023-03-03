@@ -27,31 +27,35 @@ const LoginFormThirdLayer = () => {
   }
 
   return(
-    <div>
-      <div>
-        <label htmlFor="login">Login</label>
-        <input
-          id='login'
-          type='text'
-          value={login}
-          onChange={handleLoginChange}
-        />
+    <div className="loginContainer">
+      <div className="loginForm">
+        <div className="login">
+          <label htmlFor="login">Login:</label>
+          <input
+            id='login'
+            type='text'
+            value={login}
+            onChange={handleLoginChange}
+          />
+        </div>
+        <div className="password">
+          <label htmlFor="password">Password:</label>
+          <input
+            id='password'
+            type='password'
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </div>
+        <div>
+          <button className="button buttonSignIn"
+            type='button'
+            onClick={handleSignInClick}
+            >
+            Come on
+          </button>
+        </div>
       </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input
-          id='password'
-          type='password'
-          value={password}
-          onChange={handlePasswordChange}
-        />
-      </div>
-      <button 
-        type='button'
-        onClick={handleSignInClick}
-        >
-        Sign In
-      </button>
     </div>
   )
 }
