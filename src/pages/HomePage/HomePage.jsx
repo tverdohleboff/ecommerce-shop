@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div>
       <h1>Hello!</h1>
-      <Link to='/catalog'>Catalog</Link>
+      <Link to='/shop'>Shop</Link>
     </div>
   );
 }

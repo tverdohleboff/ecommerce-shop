@@ -3,12 +3,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import MainLayout from './MainLayout';
 import HomePage from './pages/HomePage/HomePage';
-import Catalog from './pages/Catalog/Catalog';
+import Shop from './pages/Shop/Shop';
 import ErrorPage from './ErrorPage';
 import Product from './pages/Product/Product';
 import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
 import ThankYou from './pages/ThankYou/ThankYou';
+import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,8 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/catalog',
-        element: <Catalog />,
+        path: '/shop',
+        element: <Shop />,
       },
       {
         path: '/product/:productId',
