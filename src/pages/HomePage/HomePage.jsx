@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <div>
-      <h1>Hello!</h1>
-      <Link to='/shop'>Shop</Link>
+    <div className="container mx-auto px-5">
+      <h1 className="text-4xl">Hello!</h1>
     </div>
   );
 }
