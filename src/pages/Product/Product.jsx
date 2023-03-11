@@ -16,31 +16,31 @@ function Product() {
           <div className="mt-4 flex gap-4">
             <label>
               <input className="peer sr-only" name="size" type="radio" value="xs" checked />
-              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
+              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:border-0 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
                 XS
               </div>
             </label>
             <label>
               <input className="peer sr-only" name="size" type="radio" value="s" />
-              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
+              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:border-0 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
                 S
               </div>
             </label>
             <label>
               <input className="peer sr-only" name="size" type="radio" value="m" />
-              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
+              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:border-0 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
                 M
               </div>
             </label>
             <label>
               <input className="peer sr-only" name="size" type="radio" value="l" />
-              <div className="flex h-14 w-14 items-center justify-center  rounded-md border border-red-500 text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
+              <div className="flex h-14 w-14 items-center justify-center  rounded-md border border-red-500 text-slate-700 peer-checked:border-0 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
                 L
               </div>
             </label>
             <label>
               <input className="peer sr-only" name="size" type="radio" value="xl" />
-              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
+              <div className="flex h-14 w-14 items-center justify-center rounded-md border border-red-500 text-slate-700 peer-checked:border-0 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white">
                 XL
               </div>
             </label>
@@ -48,14 +48,14 @@ function Product() {
           <div className="mt-4 grid grid-cols-2 gap-8">
             <div>
               <Link
-                className="inline-block w-full rounded-md border border-red-500 py-2 text-center text-xl font-semibold"
+                className="inline-block w-full rounded-md border border-red-500 py-2 text-center text-xl font-semibold hover:border-0 hover:bg-indigo-600 hover:text-white hover:shadow-lg active:bg-indigo-700"
                 to="/cart">
                 Add to cart
               </Link>
             </div>
             <div>
               <Link
-                className="inline-block w-full rounded-md border border-red-500 py-2 text-center text-xl font-semibold"
+                className="inline-block w-full rounded-md border border-red-500 py-2 text-center text-xl font-semibold hover:border-0 hover:bg-indigo-600 hover:text-white hover:shadow-lg active:bg-indigo-700"
                 to="/favorite">
                 Add to favorite
               </Link>
